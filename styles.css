@@ -21,6 +21,8 @@ h1 { font-size: 48px; }
 h2 { font-size: 24px; margin: 50px 0; }
 h3 { font-size: 18px; }
 
+
+
 .logo {
   margin-top:20px;
   margin-left: 20px;
@@ -63,9 +65,10 @@ p {
   margin: 0;
 }
 
+
 /* Mobile Styles */
 
-@media screen and (min-width: 640px) {
+@media all and (max-width: 768px) {
 
   .logo {
     margin-top:40px;
