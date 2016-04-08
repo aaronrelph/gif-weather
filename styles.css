@@ -62,3 +62,47 @@ h3 { font-size: 18px; }
 p {
   margin: 0;
 }
+
+/* Mobile Styles */
+
+@media screen and (min-width: 640px) {
+
+  .logo {
+    margin-top:40px;
+    margin-left: 40px;
+  }
+
+  .gif {
+    background: rgba(255,255,255, 1);
+    color: #333;
+    padding: 10px 15px;
+    font-size: 40px;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 4px;
+  }
+
+  .logo h1 {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 100%
+  }
+
+  .current-temp {
+    font-size: 240px;
+  }
+
+  .current-icon {
+    font-size: 66px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  }
+}
