@@ -10,9 +10,9 @@ function weather(position) {
   console.log(position);
   $.getJSON(url + apiKey + "/" + position.coords.latitude + "," + position.coords.longitude + "?callback=?", function(data) {
     console.log(data)
-    $('.js-current-location').html('Location: ' + data.timezone);
-    $('.js-current-temp').html('The temperature is: ' + data.currently.temperature);
-    $('.js-current-icon').html('and it is: ' + data.currently.icon);
+    // $('.js-current-location').html('Location: ' + data.timezone);
+    $('.js-current-temp').html(data.currently.temperature);
+    $('.js-current-icon').html(data.currently.summary);
 
     gif(data.currently.icon)
 
