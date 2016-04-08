@@ -11,7 +11,7 @@ function weather(position) {
   $.getJSON(url + apiKey + "/" + position.coords.latitude + "," + position.coords.longitude + "?callback=?", function(data) {
     console.log(data)
     // $('.js-current-location').html('Location: ' + data.timezone);
-    $('.js-current-temp').html(data.currently.temperature);
+    $('.js-current-temp').html(Math.floor(data.currently.temperature) + '&#176;');
     $('.js-current-icon').html(data.currently.summary);
 
     gif(data.currently.icon)
