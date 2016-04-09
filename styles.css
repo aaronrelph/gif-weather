@@ -21,12 +21,11 @@ h3 { font-size: 18px; }
   background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  margin-bottom: -40px;
 }
 
 .logo {
-  margin-top:20px;
-  margin-left: 20px;
+  padding: 20px;
 }
 
 .gif {
@@ -69,12 +68,40 @@ p {
   margin: 0;
 }
 
+footer {
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 10px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 /* Mobile Styles */
 
 @media all and (max-width: 699px) and (min-width: 200px) {
 
 
   .current-temp {
-    font-size: 80px;
+    font-size: 140px;
+  }
+
+  .current-icon {
+    font-size: 31px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
