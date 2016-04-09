@@ -63,6 +63,7 @@ h3 { font-size: 18px; }
 .current-icon, .current-location {
   font-size: 21px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 p {
@@ -74,7 +75,7 @@ footer {
   padding: 10px 20px;
   font-size: 10px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 a {
@@ -99,8 +100,7 @@ a {
   }
 
   .current-icon, .current-location {
-    font-size: 31px;
-    font-weight: normal;
+    font-size: 21px;
   }
 
   footer {
