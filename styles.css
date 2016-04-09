@@ -1,13 +1,9 @@
 body {
-  /*background: url(bg.png) bottom right no-repeat;*/
   color: #fff;
   font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: lighter;
   margin: 0;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: center;
 }
@@ -51,8 +47,11 @@ h3 { font-size: 18px; }
 }
 
 .container {
-  width: 50%;
-  margin: 100px auto 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -70,47 +69,12 @@ p {
   margin: 0;
 }
 
-
 /* Mobile Styles */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 699px) and (min-width: 200px) {
 
-  .logo {
-    margin-top:40px;
-    margin-left: 40px;
-  }
-
-  .gif {
-    background: rgba(255,255,255, 1);
-    color: #333;
-    padding: 10px 15px;
-    font-size: 40px;
-    font-weight: 700;
-    display: inline-block;
-    border-radius: 4px;
-  }
-
-  .logo h1 {
-    display: inline-block;
-    margin: 0 0 0 15px;
-    font-size: 40px;
-    color: #fff;
-  }
-
-  .container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    width: 100%
-  }
 
   .current-temp {
-    font-size: 240px;
-  }
-
-  .current-icon {
-    font-size: 66px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 80px;
   }
 }
