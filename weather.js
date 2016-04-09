@@ -26,7 +26,6 @@ function city(latlng) {
   $.getJSON(url + latlng + apiKey, function(results) {
     // console.log(results)
     $('.js-current-location').html(results.results[2].address_components[0].long_name);
-    console.log(results.results[2].address_components[0].long_name)
   });
 }
 
@@ -35,8 +34,8 @@ function gif(status) {
   var url = 'http://api.giphy.com/v1/gifs/search?q=';
   var query = status;
   $.getJSON(url + query + apiKey, function(data) {
-    // console.log(data);
-    $('body').css('background-image', 'url(' + data.data[0].images.original.url + ')');
+    console.log(data);
+    $('body').css('background-image', 'url(' + data.data[5].images.original.url + ')');
   });
 }
 
