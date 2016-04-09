@@ -57,9 +57,10 @@ h3 { font-size: 18px; }
 .current-temp {
   font-size: 140px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
 }
 
-.current-icon {
+.current-icon, .current-location {
   font-size: 21px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -97,7 +98,7 @@ a {
     font-size: 140px;
   }
 
-  .current-icon {
+  .current-icon, .current-location {
     font-size: 31px;
   }
 
