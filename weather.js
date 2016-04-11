@@ -35,6 +35,9 @@ function gif(status) {
   var query = status;
   $.getJSON(url + query + apiKey, function(data) {
     console.log(data);
+    // for (var i=0; i < ) {
+    //
+    // }
     $('body').css('background-image', 'url(' + data.data[5].images.original.url + ')');
   });
 }
