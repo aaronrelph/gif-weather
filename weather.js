@@ -34,11 +34,9 @@ function gif(status) {
   var url = 'http://api.giphy.com/v1/gifs/search?q=';
   var query = status;
   $.getJSON(url + query + apiKey, function(data) {
-    console.log(data);
-    // for (var i=0; i < ) {
-    //
-    // }
-    $('body').css('background-image', 'url(' + data.data[5].images.original.url + ')');
+    // console.log(data);
+    var randomIndex = Math.floor(Math.random() * data.data.length);
+    $('body').css('background-image', 'url(' + data.data[randomIndex].images.original.url + ')');
   });
 }
 
