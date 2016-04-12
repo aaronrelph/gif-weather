@@ -8,13 +8,31 @@ function weather(position) {
   var url = 'https://api.forecast.io/forecast/';
   var data;
   // console.log(position);
+
+  // Forecast call
   $.getJSON(url + apiKey + "/" + position.coords.latitude + "," + position.coords.longitude + "?callback=?", function(data) {
 
     $('.js-current-temp').html(Math.floor(data.currently.temperature) + '&#176;');
     $('.js-current-icon').html(data.currently.summary);
 
     gif(data.currently.icon)
+    forecast(position.coords.latitude + "," + position.coords.longitude)
     city(position.coords.latitude + "," + position.coords.longitude)
+
+  });
+}
+
+function forecast(position) {
+  var apiKey = '62973e50ea4774b9d61cbd226eac21f5';
+  var url = 'https://api.forecast.io/forecast/';
+  var time = '2016-03-06';
+  var data;
+  console.log(position);
+
+  // Time machine call
+  $.getJSON(url + apiKey + position + "," + time + "?callback=?", function(data) {
+
+    $('.js-day-temp').html(Math.floor(data.daily.temperature) + '&#176;');
 
   });
 }
