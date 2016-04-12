@@ -24,8 +24,8 @@ function city(latlng) {
   var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=';
 
   $.getJSON(url + latlng + apiKey, function(results) {
-    // console.log(results)
-    $('.js-current-location').html(results.results[2].address_components[0].long_name);
+    console.log(results)
+    $('.js-current-location').html(results.results[3].address_components[1].long_name);
   });
 }
 
