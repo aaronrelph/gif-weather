@@ -36,7 +36,7 @@ function gif(status) {
   $.getJSON(url + query + apiKey, function(data) {
     // console.log(data);
     var randomIndex = Math.floor(Math.random() * data.data.length);
-    $('body').css('background-image', 'url(' + data.data[randomIndex].images.original.url + ')');
+    $('body').css('background-image', 'url(' + data.data[randomIndex].images.downsized_large.url + ')');
   });
 }
 
