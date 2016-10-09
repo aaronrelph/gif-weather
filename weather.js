@@ -31,7 +31,7 @@ function city(latlng) {
 
 function gif(status) {
   var apiKey = '&api_key=dc6zaTOxFJmzC';
-  var url = 'http://api.giphy.com/v1/gifs/search?q=';
+  var url = 'https://api.giphy.com/v1/gifs/search?q=';
   var query = status;
   $.getJSON(url + query + apiKey, function(data) {
     // console.log(data);
